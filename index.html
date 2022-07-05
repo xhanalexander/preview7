@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Expand</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
+		/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			\
+			content="black-translucent"
+		/>
+		<style type="text/css">
+			html,
+			body,
+			canvas,
+			iframe,
+			video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+			canvas iframe {
+				position: fixed;
+			}
+
+			body,
+			canvas {
+				background: black;
+				cursor: crosshair;
+			}
+
+			form:hover {
+				cursor: auto;
+			}
+
+			canvas {
+				cursor: none;
+			}
+
+			body {
+				background-color: black;
+				font-family: sans-serif;
+			}
+
+			a {
+				text-decoration: none;
+				color: white;
+				text-shadow: 0px 0px 2px black, 0px 0px 1px black,
+					0px 0px 0px black;
+			}
+
+			a:hover {
+				text-shadow: 1px 1px 1px magenta;
+				color: rgba(0, 200, 200, 1);
+			}
+
+			#credit {
+				position: fixed;
+				top: 40px;
+				right: 10px;
+				padding: 0.25em 0.75em 0.5em 0.75em;
+				/*bottom: 10px;*/
+				/*right: 10px;*/
+				/*padding: 0.75em 1.5em 0.75em 1.5em;*/
+				background: hsla(0, 0%, 80%, 0.5);
+				font-size: small;
+				border: 1px solid hsla(0, 0%, 50%, 0.8);
+			}
+
+			#credit:hover {
+				border: 1px solid hsla(0, 0%, 88%, 0.8);
+				background: rgba(0, 0, 0, 0.75);
+			}
+		</style>
+
+		<script src="gif.cc.js"></script>
+	</head>
+
+	<body id="body" style="overflow: hidden; position: fixed; cursor: none">
+		<canvas id="canvas" style="cursor: none">this is a canvas tag</canvas>
+	</body>
+	<script type="text/javascript" src="gif.minify.js"></script>
+</html>
